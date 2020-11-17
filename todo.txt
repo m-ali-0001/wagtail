@@ -1,0 +1,11 @@
+Create an Docker-Compose file that contains the following services:
+    MariaDB 10.3.
+    NGINX.
+    Wagtail CMS configuration with NGINX.
+NOTES:
+    Wagtail CMS should use either gunicorn or UWSGI (whichever you prefer) to start the CMS and connected with MariaDB database.
+    NGINX should be used to talk to Wagtail CMS to serve its pages.
+    While doing this task, create any Dockerfile you think is necessary. One Dockerfile you need to create is for Wagtail CMS.
+At the end of this task you should be able to just run:
+docker-compose up -d
+And it should start all the services. You should be able to browse Wagtail on http://localhost.
